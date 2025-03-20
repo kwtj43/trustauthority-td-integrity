@@ -1,0 +1,42 @@
+#--------------------------------------------------------------------------------------------------
+# Copyright(C) 2025 Intel Corporation. All Rights Reserved.
+#--------------------------------------------------------------------------------------------------
+name: CI Build
+
+on:
+    pull_request:
+        branches:
+            - 'main'
+    workflow_dispatch: {}
+
+jobs:
+    build:
+        runs-on: ["ubuntu-22.04"]
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Install dependencies
+              run: sudo apt-get update && sudo apt-get install -y build-essential
+
+            - name: Install opa
+              run: |
+                curl -L -o opa https://github.com/open-policy-agent/opa/releases/download/v0.70.0/opa_linux_amd64
+                chmod +x opa
+                sudo mv opa /usr/local/bin/opa
+                opa version
+
+            - name: Run make
+              run: make
+    
+            - name: Zip artifacts
+              uses: actions/upload-artifact@v4
+              with:
+                name: td-integrity
+                retention-days: 30
+                path: | 
+                  out/td-integrity.rego
+                  out/td-integrity.txt
+                  out/reference-values.json
+                  out/td-integrity.html
