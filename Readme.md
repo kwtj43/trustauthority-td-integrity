@@ -13,9 +13,7 @@ This repository contains golden measurements and build automation that keep the 
 Please use the "Actions" tab above to find the latest "main" build from this repository.  Each build will contain a "td-integrity" in the "Artifacts" section.  This zip file contains `tdx-integrity.txt` that can be uploaded to ITA.
 
 ## Local Builds and CI Automation
-This repository uses scripts (make, bash, etc.) to generate the `td-integrity.txt` appraisal policy. This section contains an overview of those tools for developers that wish to contribute to this repository.
-
-TODO...
+This repository uses scripts (make, bash, etc.) to generate the `td-integrity.txt` appraisal policy. Please see [Builds.md](./Builds.md) for more information.
 
 
 ## Code of Conduct and Contributing
