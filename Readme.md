@@ -1,27 +1,20 @@
 # TD Integrity
 
-TODO:  BETA DISCLAIMER (capture "as-is", Intel will best effort to keep refernce-values up-to-data, looking for feedback/contributions)
- 
+> [!IMPORTANT]
+> This feature is in pre-release status. For preview access, please contact your Intel sales representative. Details of implementation and usage may change before general availability.
 
-TD Integrity is feature of Intel® Tiber® Trust Authority that extends the chain-of-trust of confidential VMs from a TDX hardware-root-of-trust (HRoT) through the operating system.  For more information and instructions, please see the online documentation at https://docs.trustauthority.intel.com/main/articles/introduction.html (TODO:  LINK TO TDI PAGE).
+This repository uses golden measurements (reference values) to build the TD Integrity appraisal policy (`td-integrity.txt`).  See [Builds.md](./Builds.md) for more information on how `td-integrity.txt` is built.
 
-![Details](diagrams/overview.drawio.svg)
+More information about TD Integrity can be found at 
+https://docs.trustauthority.intel.com/main/articles/concept-td-integrity.html.
 
-This repository contains golden measurements and build automation that keep the TD Integrity appraisal policy (td-integrity.txt) and its reference-values up to date with Trust Authority supportes CSPs.
-
-## Getting td-integrity.txt
-Please use the "Actions" tab above to find the latest "main" build from this repository.  Each build will contain a "td-integrity" in the "Artifacts" section.  This zip file contains `tdx-integrity.txt` that can be uploaded to ITA.
-
-## Local Builds and CI Automation
-This repository uses scripts (make, bash, etc.) to generate the `td-integrity.txt` appraisal policy. Please see [Builds.md](./Builds.md) for more information.
-
+## Getting `td-integrity.txt`
+Please use the "Actions" tab above to find the latest "main" build from this repository.  Each build contains a "td-integrity" zip file in the "Artifacts" section.  This zip file contains the TD Integrity appraisal policy (`tdx-integrity.txt`) that can be uploaded to ITA.
 
 ## Code of Conduct and Contributing
-
 See the [CONTRIBUTING](./CONTRIBUTING.md) file for information on how to contribute to this project. The project follows the [ Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ## License
-
 This library is distributed under the MIT license found in the [LICENSE](./LICENSE) file.
 
 <br><br>
