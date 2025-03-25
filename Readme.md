@@ -1,15 +1,15 @@
 # TD Integrity
 
 > [!IMPORTANT]
-> This feature is in pre-release status. For preview access, please contact your Intel sales representative. Details of implementation and usage may change before general availability.
+> This feature is in pre-release status. Details of implementation and usage may change before general availability.
 
-*More information about TD Integrity please see
-https://docs.trustauthority.intel.com/main/articles/concept-td-integrity.html.*
+This repository uses golden measurements (reference values) to create an up to date TD Integrity appraisal policy that can be deployed to [Intel® Tiber® Trust Authority](http://www.intel.com/trustauthority).
 
-This repository uses golden measurements (reference values) to build the TD Integrity appraisal policy (`td-integrity.txt`).  See [Builds.md](./Builds.md) for more information on how the `td-integrity.txt` policy is built.
+For more information about TD Integrity (including deployment instructions), please visit
+https://docs.trustauthority.intel.com/main/articles/concept-td-integrity.html.
 
 ## Getting the TD Integrity Policy
-Please visit the respository's [releases page](https://github.com/intel/trustauthority-td-integrity/releases) and follow the instructions for getting `td-integrity.txt`.
+The TD Integrity policy (`td-integrity.txt`) can be  downloaded from this respository's [releases page](https://github.com/intel/trustauthority-td-integrity/releases).  If you encounter appraisal problems or other issues with the TD Integrity, please create an issue using this repository's "Issues" tab above.
 
 ## Code of Conduct and Contributing
 See the [CONTRIBUTING](./CONTRIBUTING.md) file for information on how to contribute to this project. The project follows the [ Code of Conduct](./CODE_OF_CONDUCT.md).
