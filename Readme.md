@@ -3,7 +3,7 @@
 > [!IMPORTANT]
 > This feature is in pre-release status. Details of implementation and usage may change before general availability.
 
-This repository uses golden measurements (reference values) to create an up to date TD Integrity appraisal policy that can be deployed to [Intel® Tiber® Trust Authority](http://www.intel.com/trustauthority).
+This repository uses golden measurements (reference values) to create an up to date TD Integrity appraisal policy that can be deployed to [Intel® Tiber™ Trust Authority](http://www.intel.com/trustauthority).
 
 For more information about TD Integrity (including deployment instructions), please visit
 https://docs.trustauthority.intel.com/main/articles/concept-td-integrity.html.
